@@ -21,7 +21,6 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @EnableAutoConfiguration
 @Configuration
-@ComponentScan("")
 @EnableAspectJAutoProxy(proxyTargetClass = true)
 public class AppConfig {
 

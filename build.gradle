@@ -54,7 +54,7 @@ task zip(type: Zip) {
 }
 
 // 指定程序入口
-// mainClassName = `com.xxx.xxx.App`
+mainClassName = 'com.niejinkun.spring.springcache.App'
 
 dependencies {
   	compile("org.springframework.boot:spring-boot-starter")
@@ -73,6 +73,7 @@ dependencies {
 	compile("org.aspectj:aspectjrt:1.6.11")
 	compile("org.aspectj:aspectjweaver:1.6.11")
 	compile("aopalliance:aopalliance:1.0")
+	provided("org.projectlombok:lombok:1.16.8")
   	testCompile("junit:junit")
 }
 task wrapper(type: Wrapper) {
